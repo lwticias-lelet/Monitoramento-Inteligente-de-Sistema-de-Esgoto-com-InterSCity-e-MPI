@@ -1,0 +1,61 @@
+#include <mpi.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+#define NUM_TIPOS_SENSOR 3  // 0: Nível da água, 1: Gases, 2: Pressão
+#define LIMITE_AGUA 80.0
+#define LIMITE_GASES 50.0
+#define LIMITE_PRESSAO 120.0
+
+// Função que gera dados aleatórios para cada tipo de sensor
+float gerar_dado_sensor(int tipo) {
+    switch (tipo) {
+        case 0: return (float)(rand() % 101);         // Nível da água: 0 a 100
+        case 1: return (float)(rand() % 71);          // Gases: 0 a 70
+        case 2: return (float)(rand() % 151);         // Pressão: 0 a 150
+        default: return 0.0;
+    }
+}
+
+// Função para verificar se o valor é anômalo
+int verificar_anomalia(int tipo, float valor) {
+    if ((tipo == 0 && valor > LIMITE_AGUA) ||
+        (tipo == 1 && valor > LIMITE_GASES) ||
+        (tipo == 2 && valor > LIMITE_PRESSAO)) {
+        return 1;
+    }
+    return 0;
+}
+
+int main(int argc, char** argv) {
+    int rank, size;
+    MPI_Init(&argc, &argv); // Inicializa MPI
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+    MPI_Comm_size(MPI_COMM_WORLD, &size);
+
+    srand(time(NULL) + rank); // Semente aleatória por processo
+
+    int tipo_sensor = rank % NUM_TIPOS_SENSOR;
+    float leitura = gerar_dado_sensor(tipo_sensor);
+
+    if (rank == 0) {
+        printf("Processo mestre coletando dados...\n");
+        float* leituras = malloc(size * sizeof(float));
+        MPI_Gather(&leitura, 1, MPI_FLOAT, leituras, 1, MPI_FLOAT, 0, MPI_COMM_WORLD);
+
+        for (int i = 0; i < size; i++) {
+            int tipo = i % NUM_TIPOS_SENSOR;
+            const char* tipo_nome = tipo == 0 ? "Água" : (tipo == 1 ? "Gases" : "Pressão");
+
+            printf("Sensor %d (%s): %.2f %s\n", i, tipo_nome, leituras[i],
+                   verificar_anomalia(tipo, leituras[i]) ? "[ANOMALIA ]" : "");
+        }
+        free(leituras);
+    } else {
+        MPI_Gather(&leitura, 1, MPI_FLOAT, NULL, 0, MPI_FLOAT, 0, MPI_COMM_WORLD);
+    }
+
+    MPI_Finalize(); // Finaliza MPI
+    return 0;
+}
