@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Sistema MPI - Master",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/sistema_monitoramento.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src"
+            }
+        },
+        {
+            "name": "Servidor InterSCity",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/servidor_intersCity.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Teste MPI",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/teste_mpi.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Gerador de Dados",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/gerador_dados.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
