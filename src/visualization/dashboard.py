@@ -525,7 +525,7 @@ class MonitoringDashboard:
         
         self.logger.info(f"Iniciando dashboard em http://{host}:{port}")
         
-        self.app.run_server(
+        self.app.run(
             debug=debug,
             host=host,
             port=port
