@@ -1,0 +1,51 @@
+{
+  "system": {
+    "name": "Sistema de Monitoramento de Esgotamento Sanitário",
+    "version": "1.0.0",
+    "debug": true
+  },
+  "mpi": {
+    "num_processes": 4,
+    "master_rank": 0,
+    "communication_protocol": "tcp",
+    "timeout": 30
+  },
+  "data": {
+    "csv_input_path": "data/csv/",
+    "processed_output_path": "data/processed/",
+    "file_pattern": "*.csv",
+    "batch_size": 1000,
+    "update_interval": 60
+  },
+  "anylogic": {
+    "export_path": "data/csv/anylogic_export.csv",
+    "polling_interval": 30,
+    "expected_columns": [
+      "timestamp",
+      "sensor_id",
+      "flow_rate",
+      "pressure",
+      "temperature",
+      "ph_level",
+      "turbidity",
+      "location_x",
+      "location_y"
+    ]
+  },
+  "monitoring": {
+    "alert_thresholds": {
+      "flow_rate_max": 100.0,
+      "pressure_max": 5.0,
+      "temperature_max": 35.0,
+      "ph_min": 6.0,
+      "ph_max": 8.5,
+      "turbidity_max": 50.0
+    },
+    "notification_channels": ["email", "dashboard"]
+  },
+  "visualization": {
+    "dashboard_port": 8050,
+    "update_interval": 5000,
+    "max_points_display": 1000
+  }
+}
