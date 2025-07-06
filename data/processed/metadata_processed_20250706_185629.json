@@ -1,0 +1,87 @@
+{
+  "timestamp": "2025-07-06T18:56:30.026951",
+  "records_count": 9144,
+  "columns": [
+    "timestamp",
+    "sensor_id",
+    "flow_rate",
+    "pressure",
+    "temperature",
+    "ph_level",
+    "turbidity",
+    "location_x",
+    "location_y",
+    "status",
+    "DQO",
+    "OD",
+    "coliformes",
+    "ecoli",
+    "H2S",
+    "amonia",
+    "qualidade",
+    "processed_at",
+    "data_quality_score",
+    "flow_rate_anomaly",
+    "flow_rate_zscore",
+    "flow_rate_zscore_anomaly",
+    "pressure_anomaly",
+    "pressure_zscore",
+    "pressure_zscore_anomaly",
+    "temperature_anomaly",
+    "temperature_zscore",
+    "temperature_zscore_anomaly",
+    "ph_level_anomaly",
+    "ph_level_zscore",
+    "ph_level_zscore_anomaly",
+    "turbidity_anomaly",
+    "turbidity_zscore",
+    "turbidity_zscore_anomaly",
+    "anomaly_count",
+    "is_anomaly"
+  ],
+  "file_path": "data\\processed\\data_processed_20250706_185629.csv",
+  "data_summary": {
+    "sensors_count": 8,
+    "time_range": {
+      "start": "2025-07-06T18:56:28.499928",
+      "end": "2025-07-07T13:12:28.499928"
+    }
+  },
+  "statistics": {
+    "flow_rate": {
+      "mean": 191.94986220472438,
+      "std": 82.95157662805448,
+      "min": 27.85,
+      "max": 737.73,
+      "median": 186.385
+    },
+    "pressure": {
+      "mean": 1.900484415166937,
+      "std": 0.7198916763087128,
+      "min": 0.5,
+      "max": 5.0,
+      "median": 1.8642210663264516
+    },
+    "temperature": {
+      "mean": 25.564045275590548,
+      "std": 4.333980007369971,
+      "min": 18.0,
+      "max": 33.0,
+      "median": 25.65
+    },
+    "ph_level": {
+      "mean": 7.505562117235345,
+      "std": 0.576763525508634,
+      "min": 6.5,
+      "max": 8.5,
+      "median": 7.51
+    },
+    "turbidity": {
+      "mean": 523.435509623797,
+      "std": 274.5719725459596,
+      "min": 50.0,
+      "max": 999.97,
+      "median": 524.835
+    }
+  }
+}
