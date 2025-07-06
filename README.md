@@ -10,3 +10,6 @@ python main_simple.py --mode process --file "data/csv/monitoramento_adapted.csv"
 
 # Passo 3: Iniciar dashboard
 python main_simple.py --mode dashboard
+
+
+USANDO MPI
