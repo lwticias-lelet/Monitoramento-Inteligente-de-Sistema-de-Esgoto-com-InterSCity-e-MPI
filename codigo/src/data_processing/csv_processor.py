@@ -439,3 +439,68 @@ if __name__ == "__main__":
             print("Erro no processamento")
     else:
         print("Uso: python csv_processor.py <caminho_do_arquivo_csv>")
+
+class CSVProcessorWithInterSCity(CSVProcessor):
+    """CSV Processor com integração InterSCity"""
+    
+    def __init__(self, config_path: str = "config/config.json", interscity_url: str = None):
+        super().__init__(config_path)
+        if interscity_url:
+            try:
+                from interscity_integration.interscity_connector import InterSCityConnector
+                self.interscity = InterSCityConnector(interscity_url)
+                
+                # Criar capabilities necessárias
+                self.interscity.create_capabilities()
+                
+                self.logger.info("Integração InterSCity ativada")
+            except ImportError:
+                self.logger.warning("Módulo interscity_integration não encontrado")
+                self.interscity = None
+        else:
+            self.interscity = None
+    
+    def process_file(self, file_path: str, save_results: bool = True) -> Optional[pd.DataFrame]:
+        """Processar arquivo e enviar para InterSCity"""
+        result = super().process_file(file_path, save_results)
+        
+        if result is not None and self.interscity:
+            self.sync_with_interscity(result)
+        
+        return result
+    
+    def sync_with_interscity(self, df: pd.DataFrame):
+        """Sincronizar dados com InterSCity"""
+        try:
+            synced_count = 0
+            
+            for _, row in df.iterrows():
+                sensor_id = str(row['sensor_id'])
+                
+                # Criar recurso se não existir
+                if sensor_id not in self.interscity.resource_uuids:
+                    self.interscity.create_sensor_resource(
+                        sensor_id,
+                        row.get('location_x', -46.731386),  # Default São Paulo
+                        row.get('location_y', -23.559616),
+                        f"Sensor de Esgoto {sensor_id}"
+                    )
+                
+                # Preparar dados
+                sensor_data = {
+                    'flow_rate': row.get('flow_rate'),
+                    'pressure': row.get('pressure'),
+                    'temperature': row.get('temperature'),
+                    'ph_level': row.get('ph_level'),
+                    'turbidity': row.get('turbidity'),
+                    'is_anomaly': row.get('is_anomaly', False)
+                }
+                
+                # Enviar para InterSCity
+                if self.interscity.send_sensor_data(sensor_id, sensor_data):
+                    synced_count += 1
+            
+            self.logger.info(f"Sincronizados {synced_count}/{len(df)} sensores com InterSCity")
+            
+        except Exception as e:
+            self.logger.error(f"Erro na sincronização com InterSCity: {e}")
