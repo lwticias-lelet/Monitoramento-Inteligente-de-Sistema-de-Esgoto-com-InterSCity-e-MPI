@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Versão simplificada do sistema sem MPI
+Versão simplificada do sistema sem MPI - CORRIGIDA
 """
 
 import os
@@ -14,11 +14,7 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from typing import Dict, Any, Optional
 
-
-# Adicionar o diretório src ao path
-sys.path.append(str(Path(__file__).parent / "src"))
-
-# Adicionar diretório raiz ao path
+# Corrigir imports - adicionar diretório raiz ao path ANTES dos imports
 project_root = Path(__file__).parent.parent
 sys.path.insert(0, str(project_root))
 sys.path.insert(0, str(project_root / "src"))
@@ -56,6 +52,39 @@ class SimpleMonitoringSystem:
         else:
             self.logger.info("Sistema inicializado")
     
+    def _load_config(self):
+        """Carrega configurações do sistema"""
+        try:
+            with open(self.config_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except FileNotFoundError:
+            self.logger.error(f"Arquivo de configuração não encontrado: {self.config_path}")
+            # Retornar configuração padrão
+            return self._get_default_config()
+    
+    def _get_default_config(self):
+        """Retorna configuração padrão"""
+        return {
+            "system": {"debug": True},
+            "data": {
+                "csv_input_path": "data/csv/",
+                "processed_output_path": "data/processed/"
+            },
+            "visualization": {"dashboard_port": 8050}
+        }
+    
+    def _setup_logging(self):
+        """Configura o sistema de logging"""
+        # Criar diretório de logs se não existir
+        log_dir = Path("logs")
+        log_dir.mkdir(exist_ok=True)
+        
+        logging.basicConfig(
+            level=logging.INFO if self.config.get('system', {}).get('debug', True) else logging.WARNING,
+            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+        )
+        self.logger = logging.getLogger(__name__)
+    
     def process_csv_file(self, file_path: str):
         """Processa um arquivo CSV específico"""
         try:
@@ -88,7 +117,8 @@ class SimpleMonitoringSystem:
             return False
         
         try:
-            from interscity_integration.interscity_connector import InterSCityConnector
+            # Import corrigido
+            from src.interscity_integration.interscity_connector import InterSCityConnector
             interscity = InterSCityConnector(self.interscity_url)
             
             # Testar listagem de capabilities
@@ -103,8 +133,15 @@ class SimpleMonitoringSystem:
         except Exception as e:
             self.logger.error(f"✗ Erro ao testar InterSCity: {e}")
             return False
+    
+    def run_dashboard(self):
+        """Executa o dashboard"""
+        try:
+            self.dashboard = MonitoringDashboard(self.config_path)
+            self.dashboard.run(debug=self.config.get('system', {}).get('debug', True))
+        except Exception as e:
+            self.logger.error(f"Erro ao executar dashboard: {e}")
 
-# MODIFICAR a função main para adicionar argumentos InterSCity:
 def main():
     """Função principal"""
     parser = argparse.ArgumentParser(description="Sistema Simplificado de Monitoramento")
@@ -147,20 +184,21 @@ def main():
             if args.file:
                 system.process_csv_file(args.file)
             
-            print("\n Iniciando dashboard...")
+            print("\n📊 Iniciando dashboard...")
             if system.interscity_enabled:
-                print(" Dashboard: http://localhost:8050")
-                print(" InterSCity: http://api.playground.interscity.org")
+                print("🌐 Dashboard: http://localhost:8050")
+                print("🔗 InterSCity: http://api.playground.interscity.org")
             else:
-                print(" Dashboard: http://localhost:8050")
-            print(" Pressione Ctrl+C para parar")
+                print("🌐 Dashboard: http://localhost:8050")
+            print("⏹️  Pressione Ctrl+C para parar")
             
             system.run_dashboard()
             
     except KeyboardInterrupt:
-        print("\n  Sistema interrompido pelo usuário")
+        print("\n⏹️  Sistema interrompido pelo usuário")
     except Exception as e:
-        print(f" Erro crítico: {e}")
+        print(f"❌ Erro crítico: {e}")
         sys.exit(1)
+
 if __name__ == "__main__":
     main()
