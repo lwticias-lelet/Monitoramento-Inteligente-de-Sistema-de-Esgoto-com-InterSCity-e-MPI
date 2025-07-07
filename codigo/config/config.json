@@ -2,7 +2,7 @@
   "system": {
     "name": "Sistema de Monitoramento de Esgotamento Sanitário",
     "version": "1.0.0",
-    "debug": true
+    "debug": false
   },
   "mpi": {
     "num_processes": 4,
