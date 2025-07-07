@@ -18,10 +18,14 @@ from typing import Dict, Any, Optional
 # Adicionar o diretório src ao path
 sys.path.append(str(Path(__file__).parent / "src"))
 
+# Adicionar diretório raiz ao path
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
+sys.path.insert(0, str(project_root / "src"))
+
 try:
-    
-    from data_processing.csv_processor import CSVProcessor, CSVProcessorWithInterSCity
-    from visualization.dashboard import MonitoringDashboard
+    from src.data_processing.csv_processor import CSVProcessor, CSVProcessorWithInterSCity
+    from src.visualization.dashboard import MonitoringDashboard
 except ImportError as e:
     print(f"Erro ao importar módulos: {e}")
     print("Certifique-se de que está no diretório correto do projeto")
