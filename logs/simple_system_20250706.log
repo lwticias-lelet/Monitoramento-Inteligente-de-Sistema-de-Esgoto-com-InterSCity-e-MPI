@@ -1,0 +1,536 @@
+2025-07-06 18:54:19,885 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 18:54:19,887 - data_processing.csv_processor - INFO - CSV Processor inicializado
+2025-07-06 18:54:19,887 - data_processing.csv_processor - INFO - Iniciando processamento: data/csv/monitoramento_adapted.csv
+2025-07-06 18:54:19,931 - data_processing.csv_processor - INFO - CSV carregado: data\csv\monitoramento_adapted.csv - 9144 registros
+2025-07-06 18:54:19,994 - data_processing.csv_processor - INFO - Limpeza concluída: 9144 -> 9144 registros
+2025-07-06 18:54:20,014 - data_processing.csv_processor - INFO - Detectadas 379 anomalias de 9144 registros
+2025-07-06 18:54:20,208 - data_processing.csv_processor - INFO - Dados salvos: data\processed\data_processed_20250706_185420.csv
+2025-07-06 18:54:20,208 - data_processing.csv_processor - INFO - Processamento concluído: data/csv/monitoramento_adapted.csv
+2025-07-06 18:54:20,209 - __main__ - INFO - Arquivo processado: 9144 registros
+2025-07-06 18:54:22,196 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 18:54:22,514 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 18:54:22,514 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 18:54:22,514 - __main__ - ERROR - Erro no dashboard: app.run_server has been replaced by app.run
+2025-07-06 18:56:29,758 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 18:56:29,758 - data_processing.csv_processor - INFO - CSV Processor inicializado
+2025-07-06 18:56:29,760 - data_processing.csv_processor - INFO - Iniciando processamento: data/csv/monitoramento_adapted.csv
+2025-07-06 18:56:29,804 - data_processing.csv_processor - INFO - CSV carregado: data\csv\monitoramento_adapted.csv - 9144 registros
+2025-07-06 18:56:29,836 - data_processing.csv_processor - INFO - Limpeza concluída: 9144 -> 9144 registros
+2025-07-06 18:56:29,852 - data_processing.csv_processor - INFO - Detectadas 378 anomalias de 9144 registros
+2025-07-06 18:56:30,026 - data_processing.csv_processor - INFO - Dados salvos: data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:56:30,026 - data_processing.csv_processor - INFO - Processamento concluído: data/csv/monitoramento_adapted.csv
+2025-07-06 18:56:30,026 - __main__ - INFO - Arquivo processado: 9144 registros
+2025-07-06 18:56:31,355 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 18:56:31,380 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 18:56:31,380 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 18:56:31,380 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-07-06 18:56:32,661 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 18:56:32,684 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 18:56:32,684 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 18:56:41,302 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:56:41,320 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:56:41,320 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:56:41,336 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:56:41,341 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:58:03,969 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 18:58:03,994 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 18:58:03,994 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 18:58:04,233 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:58:04,244 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:58:04,260 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:58:04,261 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:58:04,261 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 18:58:04,273 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:06:28,651 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 19:06:28,679 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 19:06:28,679 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 19:06:28,961 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:06:28,982 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:06:28,982 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:06:28,982 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:06:29,000 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:06:29,001 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:14:05,836 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 19:14:05,888 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 19:14:05,888 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 19:14:06,508 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:14:06,517 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:14:06,521 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:14:06,528 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:14:06,537 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:14:06,537 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_185629.csv
+2025-07-06 19:59:06,315 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 19:59:06,315 - data_processing.csv_processor - INFO - CSV Processor inicializado
+2025-07-06 19:59:06,315 - data_processing.csv_processor - INFO - Iniciando processamento: data/csv/monitoramento_adapted.csv
+2025-07-06 19:59:06,347 - data_processing.csv_processor - INFO - CSV carregado: data\csv\monitoramento_adapted.csv - 9144 registros
+2025-07-06 19:59:06,411 - data_processing.csv_processor - INFO - Limpeza concluída: 9144 -> 9144 registros
+2025-07-06 19:59:06,427 - data_processing.csv_processor - INFO - Detectadas 381 anomalias de 9144 registros
+2025-07-06 19:59:06,618 - data_processing.csv_processor - INFO - Dados salvos: data\processed\data_processed_20250706_195906.csv
+2025-07-06 19:59:06,618 - data_processing.csv_processor - INFO - Processamento concluído: data/csv/monitoramento_adapted.csv
+2025-07-06 19:59:06,618 - __main__ - INFO - Arquivo processado: 9144 registros
+2025-07-06 19:59:28,938 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 19:59:29,002 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 19:59:29,002 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 19:59:29,002 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-07-06 19:59:30,050 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 19:59:30,066 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 19:59:30,066 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 19:59:39,661 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 19:59:39,712 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 19:59:39,751 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 19:59:39,751 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 19:59:39,751 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 19:59:39,762 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 20:01:15,971 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 20:01:15,994 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 20:01:15,994 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 20:01:16,259 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 20:01:16,259 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 20:01:16,272 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 20:01:16,286 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 20:01:16,289 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 20:01:16,289 - visualization.dashboard - INFO - Dados atualizados: 9144 registros de data\processed\data_processed_20250706_195906.csv
+2025-07-06 20:15:37,974 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 20:15:38,027 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 20:15:38,027 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 20:16:19,470 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 20:16:19,470 - data_processing.csv_processor - INFO - CSV Processor inicializado
+2025-07-06 20:16:19,470 - data_processing.csv_processor - INFO - Iniciando processamento: data/csv/monitoramento_adapted.csv
+2025-07-06 20:16:19,501 - data_processing.csv_processor - INFO - CSV carregado: data\csv\monitoramento_adapted.csv - 152 registros
+2025-07-06 20:16:19,533 - data_processing.csv_processor - INFO - Limpeza concluída: 152 -> 152 registros
+2025-07-06 20:16:19,549 - data_processing.csv_processor - INFO - Detectadas 4 anomalias de 152 registros
+2025-07-06 20:16:19,565 - data_processing.csv_processor - INFO - Dados salvos: data\processed\data_processed_20250706_201619.csv
+2025-07-06 20:16:19,565 - data_processing.csv_processor - INFO - Processamento concluído: data/csv/monitoramento_adapted.csv
+2025-07-06 20:16:19,565 - __main__ - INFO - Arquivo processado: 152 registros
+2025-07-06 20:16:31,342 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 20:16:31,358 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 20:16:31,358 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 20:16:31,358 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-07-06 20:16:32,426 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 20:16:32,438 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 20:16:32,438 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 20:16:34,724 - visualization.dashboard - INFO - Dados atualizados: 152 registros de data\processed\data_processed_20250706_201619.csv
+2025-07-06 20:16:34,731 - visualization.dashboard - INFO - Dados atualizados: 152 registros de data\processed\data_processed_20250706_201619.csv
+2025-07-06 20:16:34,737 - visualization.dashboard - INFO - Dados atualizados: 152 registros de data\processed\data_processed_20250706_201619.csv
+2025-07-06 20:16:34,750 - visualization.dashboard - INFO - Dados atualizados: 152 registros de data\processed\data_processed_20250706_201619.csv
+2025-07-06 20:16:34,758 - visualization.dashboard - INFO - Dados atualizados: 152 registros de data\processed\data_processed_20250706_201619.csv
+2025-07-06 20:16:34,772 - visualization.dashboard - INFO - Dados atualizados: 152 registros de data\processed\data_processed_20250706_201619.csv
+2025-07-06 21:18:08,474 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:18:08,474 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:18:08,542 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:18:08,542 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:18:08,542 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:18:17,535 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:18:17,535 - data_processing.csv_processor - INFO - CSV Processor inicializado
+2025-07-06 21:18:17,535 - data_processing.csv_processor - INFO - Iniciando processamento: data/csv/monitoramento_adapted.csv
+2025-07-06 21:18:17,606 - data_processing.csv_processor - INFO - CSV carregado: data\csv\monitoramento_adapted.csv - 14224 registros
+2025-07-06 21:18:17,678 - data_processing.csv_processor - INFO - Limpeza concluída: 14224 -> 14224 registros
+2025-07-06 21:18:17,694 - data_processing.csv_processor - INFO - Detectadas 552 anomalias de 14224 registros
+2025-07-06 21:18:17,995 - data_processing.csv_processor - INFO - Dados salvos: data\processed\data_processed_20250706_211817.csv
+2025-07-06 21:18:17,995 - data_processing.csv_processor - INFO - Processamento concluído: data/csv/monitoramento_adapted.csv
+2025-07-06 21:18:17,995 - __main__ - INFO - Arquivo processado: 14224 registros
+2025-07-06 21:18:32,005 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:18:32,021 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:18:32,021 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:18:32,021 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-07-06 21:18:33,082 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:18:33,115 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:18:33,117 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:18:34,209 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:18:34,209 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:18:34,225 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:18:34,225 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:18:34,225 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:18:34,225 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:18:40,616 - visualization.dashboard - INFO - Dados atualizados: 14224 registros de data\processed\data_processed_20250706_211817.csv
+2025-07-06 21:18:40,619 - visualization.dashboard - INFO - Dados atualizados: 14224 registros de data\processed\data_processed_20250706_211817.csv
+2025-07-06 21:18:40,620 - visualization.dashboard - INFO - Dados atualizados: 14224 registros de data\processed\data_processed_20250706_211817.csv
+2025-07-06 21:18:40,754 - visualization.dashboard - INFO - Dados atualizados: 14224 registros de data\processed\data_processed_20250706_211817.csv
+2025-07-06 21:18:40,754 - visualization.dashboard - INFO - Dados atualizados: 14224 registros de data\processed\data_processed_20250706_211817.csv
+2025-07-06 21:18:40,767 - visualization.dashboard - INFO - Dados atualizados: 14224 registros de data\processed\data_processed_20250706_211817.csv
+2025-07-06 21:22:42,048 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:42,054 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:42,054 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:42,054 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:42,065 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:42,092 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:44,693 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:22:44,693 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:22:44,740 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:22:44,740 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:22:44,740 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:22:44,740 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:22:44,740 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:22:44,740 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:22:45,283 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:45,288 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:45,294 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:45,297 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:45,303 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:45,304 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:47,615 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:22:47,628 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:22:47,639 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:22:47,639 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:22:47,641 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:22:47,651 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:22:47,652 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:22:47,665 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:22:47,665 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:22:48,004 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:48,010 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:48,010 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:48,015 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:48,016 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:48,018 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:53,066 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:53,066 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:53,090 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:53,137 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:53,147 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:53,169 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:58,062 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:58,062 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:58,102 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:58,103 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:58,103 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:22:58,106 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:03,062 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:03,062 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:03,095 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:03,100 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:03,160 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:03,160 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:08,073 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:08,113 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:08,114 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:08,115 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:08,145 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:08,166 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:13,057 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:13,057 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:13,064 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:13,106 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:13,143 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:13,144 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:19,095 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:19,105 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:19,111 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:19,125 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:19,173 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:19,173 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:45,052 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:45,057 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:45,063 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:45,085 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:45,161 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:45,161 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:49,064 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:49,064 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:49,066 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:49,124 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:49,161 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:23:49,163 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:45,053 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:45,056 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:45,085 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:45,087 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:45,088 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:45,146 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:49,062 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:49,065 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:49,080 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:49,179 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:49,240 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:24:49,240 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:45,054 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:45,059 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:45,114 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:45,114 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:45,114 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:45,190 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:49,053 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:49,056 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:49,057 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:49,160 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:49,213 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:25:49,246 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:45,062 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:45,067 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:45,091 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:45,139 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:45,246 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:45,251 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:49,046 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:49,051 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:49,059 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:49,164 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:49,192 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:26:49,224 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:45,047 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:45,050 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:45,089 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:45,119 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:45,152 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:45,221 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:49,053 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:49,055 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:49,055 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:49,173 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:49,183 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:27:49,188 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:45,045 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:45,051 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:45,053 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:45,145 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:45,146 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:45,146 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:49,063 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:49,066 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:49,067 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:49,192 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:49,394 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:28:49,398 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:45,059 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:45,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:45,113 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:45,172 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:45,214 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:45,214 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:49,052 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:49,056 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:49,086 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:49,118 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:49,229 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:29:49,238 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:45,044 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:45,052 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:45,107 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:45,155 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:45,165 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:45,228 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:49,063 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:49,066 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:49,068 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:49,144 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:49,266 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:30:49,272 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:45,059 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:45,067 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:45,077 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:45,079 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:45,200 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:45,268 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:49,060 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:49,064 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:49,072 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:49,145 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:49,174 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:31:49,186 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:45,056 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:45,059 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:45,107 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:45,139 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:45,187 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:45,190 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:49,058 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:49,063 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:49,091 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:49,172 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:49,173 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:32:49,199 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:45,051 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:45,057 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:45,116 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:45,117 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:45,117 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:45,215 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:49,049 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:49,049 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:49,115 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:49,161 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:49,191 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:33:49,247 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:45,050 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:45,054 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:45,083 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:45,129 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:45,218 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:45,218 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:49,057 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:49,060 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:49,066 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:49,119 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:49,262 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:34:49,264 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:45,057 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:45,066 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:45,072 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:45,072 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:45,101 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:45,102 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:49,050 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:49,055 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:49,070 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:49,179 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:49,251 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:35:49,255 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:45,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:45,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:45,124 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:45,124 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:45,468 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:45,492 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:49,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:49,064 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:49,080 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:49,143 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:49,189 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:36:49,205 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:45,049 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:45,053 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:45,054 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:45,085 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:45,225 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:45,229 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:49,059 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:49,064 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:49,071 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:49,079 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:49,156 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:37:49,245 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:45,055 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:45,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:45,091 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:45,194 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:45,196 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:45,215 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:49,077 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:49,085 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:49,092 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:49,205 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:49,205 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:38:49,288 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:45,053 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:45,057 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:45,069 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:45,178 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:45,194 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:45,233 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:49,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:49,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:49,133 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:49,143 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:49,205 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:39:49,277 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:45,059 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:45,060 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:45,060 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:45,211 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:45,216 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:45,252 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:49,052 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:49,054 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:49,109 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:49,109 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:49,211 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:40:49,218 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:45,044 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:45,063 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:45,092 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:45,171 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:45,248 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:45,297 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:49,045 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:49,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:49,061 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:49,171 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:49,171 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:41:49,235 - visualization.dashboard - WARNING - Nenhum arquivo processado encontrado
+2025-07-06 21:42:38,721 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:42:38,721 - data_processing.csv_processor - INFO - CSV Processor inicializado
+2025-07-06 21:42:38,721 - data_processing.csv_processor - INFO - Iniciando processamento: data/csv/monitoramento_adapted.csv
+2025-07-06 21:42:38,768 - data_processing.csv_processor - INFO - CSV carregado: data\csv\monitoramento_adapted.csv - 8880 registros
+2025-07-06 21:42:38,816 - data_processing.csv_processor - INFO - Limpeza concluída: 8880 -> 8880 registros
+2025-07-06 21:42:38,843 - data_processing.csv_processor - INFO - Detectadas 344 anomalias de 8880 registros
+2025-07-06 21:42:39,007 - data_processing.csv_processor - INFO - Dados salvos: data\processed\data_processed_20250706_214238.csv
+2025-07-06 21:42:39,007 - data_processing.csv_processor - INFO - Processamento concluído: data/csv/monitoramento_adapted.csv
+2025-07-06 21:42:39,007 - __main__ - INFO - Arquivo processado: 8880 registros
+2025-07-06 21:42:45,228 - visualization.dashboard - INFO - Dados atualizados: 8880 registros de data\processed\data_processed_20250706_214238.csv
+2025-07-06 21:42:45,263 - visualization.dashboard - INFO - Dados atualizados: 8880 registros de data\processed\data_processed_20250706_214238.csv
+2025-07-06 21:42:45,267 - visualization.dashboard - INFO - Dados atualizados: 8880 registros de data\processed\data_processed_20250706_214238.csv
+2025-07-06 21:42:45,305 - visualization.dashboard - INFO - Dados atualizados: 8880 registros de data\processed\data_processed_20250706_214238.csv
+2025-07-06 21:42:45,312 - visualization.dashboard - INFO - Dados atualizados: 8880 registros de data\processed\data_processed_20250706_214238.csv
+2025-07-06 21:42:45,314 - visualization.dashboard - INFO - Dados atualizados: 8880 registros de data\processed\data_processed_20250706_214238.csv
+2025-07-06 21:42:51,599 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:42:51,671 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:42:51,671 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:42:51,673 - dash.dash - INFO - Dash is running on http://127.0.0.1:8050/
+
+2025-07-06 21:42:53,000 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:42:53,032 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:42:53,033 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:51:48,749 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:51:48,749 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:51:48,797 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:51:48,797 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:51:48,797 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:51:48,797 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:51:48,797 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:51:58,045 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:51:58,070 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:51:58,072 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:51:58,073 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:51:58,074 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:51:58,093 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:51:58,093 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:51:58,094 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:51:58,094 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:53:12,383 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:53:12,383 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:53:12,401 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:53:12,411 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:53:12,411 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:53:12,411 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:53:12,413 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:53:12,428 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:53:12,428 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:55:22,751 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:55:22,751 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:55:22,751 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:55:22,772 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:55:22,772 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:55:22,774 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:55:22,774 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:55:22,775 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:55:22,775 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:55:34,062 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:55:34,062 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:55:34,077 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:55:34,097 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:55:34,097 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:55:34,098 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:55:34,098 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:55:34,102 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:55:34,102 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:56:47,903 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:56:47,903 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:56:47,913 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 21:56:47,933 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:56:47,933 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:56:47,935 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:56:47,935 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 21:56:47,939 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 21:56:47,943 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 22:00:49,832 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 22:00:49,832 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 22:00:49,832 - __main__ - INFO - Sistema Simplificado inicializado
+2025-07-06 22:00:49,892 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 22:00:49,892 - visualization.dashboard - INFO - Dashboard inicializado
+2025-07-06 22:00:49,892 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 22:00:49,892 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
+2025-07-06 22:00:49,892 - visualization.dashboard - INFO - Iniciando dashboard em http://127.0.0.1:8050
