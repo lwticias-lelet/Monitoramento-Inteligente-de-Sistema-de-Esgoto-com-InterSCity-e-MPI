@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """
 Dashboard Final para Sistema de Monitoramento
-Otimizado para seus dados existentes
-Execute com: python run_dashboard.py
+Com limpeza de arquivos antigos e geração automática de dados processados
 """
 
 import pandas as pd
@@ -20,61 +19,65 @@ warnings.filterwarnings('ignore')
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Inicializar app
+# Caminhos
+PROCESSED_DIR = Path("codigo/data/processed")
+ADAPTED_FILE = Path("codigo/data/csv/monitoramento_adapted.csv")
+
+# Inicializar app ANTES dos callbacks
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "🚰 Monitoramento de Esgotamento Sanitário"
 
-def load_data():
-    """Carrega os dados mais recentes disponíveis"""
+# Funções auxiliares
+def limpar_arquivos_antigos():
+    """Apaga arquivos CSV antigos na pasta processed"""
+    if PROCESSED_DIR.exists():
+        for arquivo in PROCESSED_DIR.glob("data_processed_*.csv"):
+            try:
+                arquivo.unlink()
+                logger.info(f"Arquivo antigo removido: {arquivo.name}")
+            except Exception as e:
+                logger.warning(f"Erro ao remover {arquivo.name}: {e}")
+
+def gerar_arquivo_processado():
+    """Gera arquivo processado novo a partir do arquivo adaptado"""
+    if not ADAPTED_FILE.exists():
+        logger.error(f"Arquivo adaptado não encontrado: {ADAPTED_FILE}")
+        return None
+    
     try:
-        # 1. Primeiro tentar dados processados (melhor qualidade)
-        processed_path = Path("data/processed")
-        if processed_path.exists():
-            csv_files = list(processed_path.glob("data_processed_*.csv"))
-            if csv_files:
-                latest_file = max(csv_files, key=lambda f: f.stat().st_mtime)
-                df = pd.read_csv(latest_file)
-                if 'timestamp' in df.columns:
-                    df['timestamp'] = pd.to_datetime(df['timestamp'])
-                logger.info(f"✅ Dados processados carregados: {len(df)} registros de {latest_file.name}")
-                return df, "processados"
+        df = pd.read_csv(ADAPTED_FILE)
         
-        # 2. Tentar dados adaptados
-        adapted_file = Path("data/csv/monitoramento_adapted.csv")
-        if adapted_file.exists():
-            df = pd.read_csv(adapted_file)
+        # Exemplo simples: adicionar coluna processed_at com timestamp atual
+        df['processed_at'] = datetime.now().isoformat()
+        
+        # Nome do arquivo novo com timestamp
+        nome_arquivo = f"data_processed_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+        caminho_arquivo = PROCESSED_DIR / nome_arquivo
+        
+        # Criar pasta se não existir
+        PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+        
+        df.to_csv(caminho_arquivo, index=False)
+        logger.info(f"Arquivo processado gerado: {nome_arquivo}")
+        
+        return caminho_arquivo
+    except Exception as e:
+        logger.error(f"Erro ao gerar arquivo processado: {e}")
+        return None
+
+def load_data():
+    """Carrega o arquivo processado mais recente"""
+    if PROCESSED_DIR.exists():
+        arquivos = list(PROCESSED_DIR.glob("data_processed_*.csv"))
+        if arquivos:
+            mais_recente = max(arquivos, key=lambda f: f.stat().st_mtime)
+            df = pd.read_csv(mais_recente)
             if 'timestamp' in df.columns:
                 df['timestamp'] = pd.to_datetime(df['timestamp'])
-            logger.info(f"✅ Dados adaptados carregados: {len(df)} registros")
-            return df, "adaptados"
-        
-        # 3. Tentar dados originais
-        original_file = Path("data/csv/monitoramento.csv")
-        if original_file.exists():
-            df = pd.read_csv(original_file)
-            # Mapear colunas para formato padrão
-            if 'tempo_min' in df.columns:
-                base_time = datetime.now() - pd.Timedelta(hours=24)
-                df['timestamp'] = [base_time + pd.Timedelta(minutes=float(t)) for t in df['tempo_min']]
-            if 'sensorId' in df.columns:
-                df['sensor_id'] = df['sensorId']
-            if 'vazao' in df.columns:
-                df['flow_rate'] = df['vazao']
-            if 'temperatura' in df.columns:
-                df['temperature'] = df['temperatura']
-            if 'pH' in df.columns:
-                df['ph_level'] = df['pH']
-            if 'turbidez' in df.columns:
-                df['turbidity'] = df['turbidez']
-            logger.info(f"✅ Dados originais carregados: {len(df)} registros")
-            return df, "originais"
-        
-        logger.warning("❌ Nenhum arquivo encontrado")
-        return pd.DataFrame(), "vazio"
-        
-    except Exception as e:
-        logger.error(f"Erro ao carregar dados: {e}")
-        return pd.DataFrame(), "erro"
+            logger.info(f"Dados carregados do arquivo: {mais_recente.name} ({len(df)} registros)")
+            return df, "processados"
+    logger.warning("Nenhum arquivo processado encontrado")
+    return pd.DataFrame(), "vazio"
 
 def get_data_info(df, data_type):
     """Obtém informações sobre os dados carregados"""
@@ -91,9 +94,12 @@ def get_data_info(df, data_type):
     
     return status_info, records, sensors, sensor_col
 
+# Limpar arquivos antigos e gerar novo arquivo processado ANTES de iniciar o dashboard
+limpar_arquivos_antigos()
+novo_arquivo = gerar_arquivo_processado()
+
 # Layout do Dashboard
 app.layout = dbc.Container([
-    
     # Header
     dbc.Row([
         dbc.Col([
@@ -254,6 +260,7 @@ app.layout = dbc.Container([
 ], fluid=True)
 
 # Callbacks
+
 @app.callback(
     [Output('data-status', 'children'),
      Output('filtro-sensor', 'options'),
@@ -476,39 +483,22 @@ def atualizar_correlacao(sensores_selecionados, n):
     if sensores_selecionados and sensor_col in df.columns:
         df = df[df[sensor_col].isin(sensores_selecionados)]
     
-    # Selecionar colunas numéricas
-    numeric_cols = ['flow_rate', 'temperature', 'ph_level', 'turbidity', 'pressure', 'vazao', 'temperatura', 'pH', 'turbidez']
-    available_cols = [col for col in numeric_cols if col in df.columns]
+    # Selecionar colunas numéricas para correlação
+    cols_numericas = df.select_dtypes(include='number').columns
+    if len(cols_numericas) < 2:
+        return px.imshow(title="🔗 Dados numéricos insuficientes para correlação")
     
-    if len(available_cols) < 2:
-        return px.imshow(title="🔗 Dados insuficientes para correlação")
-    
-    # Calcular matriz de correlação
-    corr_matrix = df[available_cols].corr()
+    corr = df[cols_numericas].corr()
     
     fig = px.imshow(
-        corr_matrix,
+        corr,
         text_auto=True,
         aspect="auto",
-        title="🔗 Matriz de Correlação dos Parâmetros",
-        color_continuous_scale="RdBu"
+        title="🔗 Matriz de Correlação dos Parâmetros"
     )
-    
     return fig
 
+# Executar app
 if __name__ == "__main__":
-    print("\n" + "="*70)
-    print("🚰 SISTEMA DE MONITORAMENTO DE ESGOTAMENTO SANITÁRIO")
-    print("📍 São Luís, MaranhãPTK, Brasil")
-    print("="*70)
-    print("🌐 Iniciando dashboard em http://localhost:8050")
-    print("📊 Atualizações automáticas a cada 30 segundos")
-    print("⏹️  Pressione Ctrl+C para parar")
-    print("="*70 + "\n")
-    
-    try:
-        app.run(debug=True, port=8050, host='127.0.0.1')
-    except KeyboardInterrupt:
-        print("\n⏹️  Dashboard interrompido pelo usuário")
-    except Exception as e:
-        print(f"\n❌ Erro ao executar dashboard: {e}")
+    print("\nIniciando Dashboard...")
+    app.run_server(debug=True, port=8050, host='127.0.0.1')
