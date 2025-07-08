@@ -23,10 +23,11 @@ logger = logging.getLogger(__name__)
 PROCESSED_DIR = Path("codigo/data/processed")
 ADAPTED_FILE = Path("codigo/data/csv/monitoramento_adapted.csv")
 
-# Inicializar app
+# Inicializar app ANTES dos callbacks
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 app.title = "🚰 Monitoramento de Esgotamento Sanitário"
 
+# Funções auxiliares
 def limpar_arquivos_antigos():
     """Apaga arquivos CSV antigos na pasta processed"""
     if PROCESSED_DIR.exists():
@@ -99,7 +100,6 @@ novo_arquivo = gerar_arquivo_processado()
 
 # Layout do Dashboard
 app.layout = dbc.Container([
-    
     # Header
     dbc.Row([
         dbc.Col([
@@ -260,6 +260,7 @@ app.layout = dbc.Container([
 ], fluid=True)
 
 # Callbacks
+
 @app.callback(
     [Output('data-status', 'children'),
      Output('filtro-sensor', 'options'),
@@ -497,6 +498,7 @@ def atualizar_correlacao(sensores_selecionados, n):
     )
     return fig
 
+# Executar app
 if __name__ == "__main__":
     print("\nIniciando Dashboard...")
     app.run_server(debug=True, port=8050, host='127.0.0.1')
