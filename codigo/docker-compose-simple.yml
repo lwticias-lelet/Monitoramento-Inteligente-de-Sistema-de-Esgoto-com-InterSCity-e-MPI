@@ -1,0 +1,15 @@
+﻿services:
+  mongo:
+    image: mongo:4.4
+    container_name: fiware-mongo-simple
+    ports:
+      - "27017:27017"
+
+  orion:
+    image: fiware/orion:3.7.0
+    container_name: fiware-orion-simple
+    depends_on:
+      - mongo
+    ports:
+      - "1026:1026"
+    command: -dbhost mongo

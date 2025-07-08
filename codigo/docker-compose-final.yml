@@ -1,0 +1,47 @@
+﻿services:
+  mongo:
+    image: mongo:4.4
+    hostname: mongo
+    container_name: fiware-mongo
+    ports:
+      - "27017:27017"
+    command: --nojournal
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - fiware
+
+  orion:
+    image: fiware/orion:3.7.0
+    hostname: orion
+    container_name: fiware-orion
+    depends_on:
+      - mongo
+    ports:
+      - "1026:1026"
+    command: -dbhost mongo -logLevel INFO
+    networks:
+      - fiware
+    restart: unless-stopped
+
+  mosquitto:
+    image: eclipse-mosquitto:1.6
+    hostname: mosquitto
+    container_name: fiware-mosquitto
+    ports:
+      - "1883:1883"
+    volumes:
+      - mosquitto_data:/mosquitto/data
+      - mosquitto_logs:/mosquitto/log
+    networks:
+      - fiware
+    restart: unless-stopped
+
+volumes:
+  mongo_data:
+  mosquitto_data:
+  mosquitto_logs:
+
+networks:
+  fiware:
+    driver: bridge
