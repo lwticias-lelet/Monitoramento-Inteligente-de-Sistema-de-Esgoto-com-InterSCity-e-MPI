@@ -501,4 +501,5 @@ def atualizar_correlacao(sensores_selecionados, n):
 # Executar app
 if __name__ == "__main__":
     print("\nIniciando Dashboard...")
-    app.run_server(debug=True, port=8050, host='127.0.0.1')
+    app.run(debug=True, port=8050, host='127.0.0.1')
+
