@@ -1,0 +1,281 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "IntersCity - Monitoramento esgoto",
+    "collectionId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+    "dateExported": "2025-07-09T03:51:25.186Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6e1f63b6-57c7-418c-a857-0fd5356091a4",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Ver capabilites",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/catalog/capabilities",
+            "method": "GET",
+            "sortNum": 2500,
+            "created": "2025-07-09T03:32:16.651Z",
+            "modified": "2025-07-09T03:32:16.651Z",
+            "headers": []
+        },
+        {
+            "_id": "5e2db647-d5ef-4ff2-ad7b-2eec562ae72e",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Ver sensores (resources)",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/catalog/resources",
+            "method": "GET",
+            "sortNum": 5000,
+            "created": "2025-07-09T03:32:23.811Z",
+            "modified": "2025-07-09T03:32:23.811Z",
+            "headers": []
+        },
+        {
+            "_id": "124a2ba0-40d2-472f-944e-3ff95aed23ff",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Dados sensor centro",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/collector/resources/c9221adc-b5fc-4e7a-8887-efbe4829281d/data",
+            "method": "POST",
+            "sortNum": 8750,
+            "created": "2025-07-09T03:37:21.400Z",
+            "modified": "2025-07-09T03:42:05.596Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a6574d78-8b8c-45ba-b05b-0aa35ae18173",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Dados sensor renascença",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/collector/resources/de10d2ff-b9fc-4843-a372-de6d9b4eda14/data",
+            "method": "POST",
+            "sortNum": 9375,
+            "created": "2025-07-09T03:31:35.805Z",
+            "modified": "2025-07-09T03:31:35.805Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "33f7b88b-c7da-4021-bfba-696ac14e56a2",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Dados sensor Turu",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/collector/resources/c9221adc-b5fc-4e7a-8887-efbe4829281d/data",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-07-09T03:31:06.097Z",
+            "modified": "2025-07-09T03:31:06.097Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ]
+        },
+        {
+            "_id": "70a4becc-4ffe-4288-9bc9-d6b6f28f3ec6",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Dados sensor são cristovão",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/collector/resources/0eeb7706-ce97-4703-9042-0ef1a6b88af5/data",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-07-09T03:45:25.951Z",
+            "modified": "2025-07-09T03:45:25.951Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{}",
+                "form": []
+            }
+        },
+        {
+            "_id": "78c7b212-5ab9-4ff2-aab0-2173ac5f4201",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Dados sensor anil",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/collector/resources/12de456d-a760-4ca2-903c-5b8859de33f0/data",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2025-07-09T03:46:31.074Z",
+            "modified": "2025-07-09T03:46:31.074Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{}",
+                "form": []
+            }
+        },
+        {
+            "_id": "341dc714-3eeb-4541-9670-1ec8418ba6d0",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Dados sensor vinhais",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/collector/resources/1e9240c9-8efa-4c71-ba85-ed599dec1e7b/data",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2025-07-09T03:49:34.217Z",
+            "modified": "2025-07-09T03:49:34.217Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{}\n",
+                "form": []
+            }
+        },
+        {
+            "_id": "2e7cb0ce-0144-4b64-a08c-f1506f2ecd96",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Dados sensor bequimão",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/collector/resources/80650e2c-202f-4559-b1b1-fd9ca4979691/data",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2025-07-09T03:49:42.818Z",
+            "modified": "2025-07-09T03:49:42.818Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ce1ead7a-777d-4936-8ea0-2cea24d83489",
+            "colId": "0ace67c9-9283-4c1f-bf57-89981d1c76ea",
+            "containerId": "",
+            "name": "Dados sensor cohama",
+            "url": "https://cidadesinteligentes.lsdi.ufma.br/interscity_lh/collector/resources/3390cf88-3e74-429c-9aa1-077e720eba98/data",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2025-07-09T03:49:49.529Z",
+            "modified": "2025-07-09T03:49:49.529Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{}\n",
+                "form": []
+            }
+        }
+    ],
+    "ref": "Fe3KUbDVPJqHTtJWTyNV4gEpt4nMx3r2gCqOqiawrbsDr5tXCKJCjl9J8M3HRNobgSAkJ5xt--bRyYnQ6CLeBw"
+}
