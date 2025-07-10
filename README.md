@@ -18,7 +18,6 @@ Sistema distribuído para monitoramento em tempo real de redes de esgotamento sa
 - [Sobre o Projeto](#-sobre-o-projeto)
 - [Características](#-características)
 - [Arquitetura](#-arquitetura)
-- [Cronograma](#-cronograma)
 - [Instalação](#-instalação)
 - [Configuração](#-configuração)
 - [Como Usar](#-como-usar)
