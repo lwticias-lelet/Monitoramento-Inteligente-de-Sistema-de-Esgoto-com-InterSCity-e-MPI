@@ -1,55 +1,85 @@
-# 🚰 Sistema de Monitoramento de Esgotamento Sanitário
+# 🚰 Sistema de Monitoramento Inteligente de Esgotamento Sanitário
 
-Sistema inteligente para monitoramento em tempo real de redes de esgotamento sanitário com processamento distribuído, detecção de anomalias e dashboard interativo.
+Sistema distribuído para monitoramento em tempo real de redes de esgotamento sanitário utilizando **MPI**, **InterSCity** e **dashboard web interativo**. Desenvolvido para a disciplina de Sistemas Distribuídos da UFMA.
+
+## 👥 Equipe
+
+- **Kaline Maria Carvalho**
+- **Letícia Delfino de Araújo** (Gerente do Projeto)
+- **Hissa Bárbara Oliveira**
+
+**Professor:** Luiz Henrique Neves Rodrigues  
+**Instituição:** Universidade Federal do Maranhão (UFMA)  
+**Curso:** Bacharelado Interdisciplinar em Ciência e Tecnologia  
+**Disciplina:** Sistemas Distribuídos
 
 ## 📋 Índice
 
+- [Sobre o Projeto](#-sobre-o-projeto)
 - [Características](#-características)
 - [Arquitetura](#-arquitetura)
+- [Cronograma](#-cronograma)
 - [Instalação](#-instalação)
 - [Configuração](#-configuração)
-- [Uso](#-uso)
+- [Como Usar](#-como-usar)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
-- [API e Integrações](#-api-e-integrações)
-- [Dashboard](#-dashboard)
-- [Desenvolvimento](#-desenvolvimento)
-- [Troubleshooting](#-troubleshooting)
+- [Tecnologias](#-tecnologias)
+- [Relatórios de Progresso](#-relatórios-de-progresso)
+- [Contribuição](#-contribuição)
+
+## 🎯 Sobre o Projeto
+
+O projeto simula um sistema de monitoramento inteligente para o esgotamento sanitário de São Luís - MA, utilizando conceitos de **sistemas distribuídos** e **cidades inteligentes**. O sistema coleta dados de sensores IoT simulados em pontos críticos da rede de esgoto e processa essas informações de forma distribuída usando **MPI (Message Passing Interface)**.
+
+### Objetivos
+
+**Objetivo Geral:**
+Desenvolver uma simulação de monitoramento inteligente do sistema de esgoto de São Luís utilizando a plataforma InterSCity e processamento distribuído com MPI em C.
+
+**Objetivos Específicos:**
+- ✅ Instalar e configurar a plataforma InterSCity
+- ✅ Simular sensores de monitoramento (nível de água, vazamento, gases, pressão)
+- ✅ Implementar comunicação distribuída com MPI
+- ✅ Detectar anomalias e gerar alertas
+- ✅ Avaliar eficiência da arquitetura distribuída
 
 ## 🌟 Características
 
 ### 🔍 Monitoramento Inteligente
+- **Sensores Simulados**: Nível de água, pressão, temperatura, pH, turbidez
 - **Detecção de Anomalias**: Algoritmos estatísticos para identificar padrões anômalos
 - **Processamento Distribuído**: Suporte MPI para processamento paralelo
-- **Tempo Real**: Monitoramento contínuo com atualizações automáticas
-- **Alertas Automáticos**: Sistema de notificações para condições críticas
+- **Alertas em Tempo Real**: Sistema de notificações para condições críticas
 
 ### 📊 Visualização Avançada
 - **Dashboard Interativo**: Interface web responsiva com Plotly/Dash
-- **Mapas Georreferenciados**: Visualização espacial dos sensores
+- **Mapas Georreferenciados**: Visualização espacial dos sensores em São Luís
 - **Gráficos Temporais**: Análise de tendências e padrões
 - **Relatórios Automatizados**: Estatísticas e resumos executivos
 
 ### 🔗 Integrações
-- **AnyLogic**: Conector para simulações hidráulicas
+- **InterSCity**: Plataforma de cidades inteligentes
+- **AnyLogic**: Conector para simulações hidráulicas (alternativa desenvolvida)
 - **Node-RED**: API REST e MQTT para automação
 - **CSV/Excel**: Importação e exportação de dados
-- **Notificações**: Email, SMS, Slack, Telegram
 
 ### 📡 Parâmetros Monitorados
 - **Vazão** (L/s)
 - **Pressão** (bar)
 - **Temperatura** (°C)
-- **pH**
+- **pH** (escala 0-14)
 - **Turbidez** (NTU)
-- **DQO, OD, Coliformes, E.coli**
-- **H₂S, Amônia**
+- **DQO** (Demanda Química de Oxigênio)
+- **OD** (Oxigênio Dissolvido)
+- **Coliformes e E.coli**
+- **H₂S e Amônia**
 
 ## 🏗️ Arquitetura
 
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   AnyLogic      │───▶│  Processamento  │───▶│   Dashboard     │
-│   Simulator     │    │   Distribuído   │    │   Web (Dash)    │
+│   Sensores IoT  │───▶│  Processamento  │───▶│   Dashboard     │
+│   (Simulados)   │    │   Distribuído   │    │   Web (Dash)    │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
          │                       │                       │
          ▼                       ▼                       ▼
@@ -60,10 +90,26 @@ Sistema inteligente para monitoramento em tempo real de redes de esgotamento san
          │                       │                       │
          ▼                       ▼                       ▼
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Node-RED      │    │   Alertas &     │    │   API REST      │
+│   InterSCity    │    │   Alertas &     │    │   API REST      │
 │   Integration   │    │   Notificações  │    │   & MQTT        │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
+
+## 📅 Cronograma
+
+O projeto foi executado de acordo com o seguinte cronograma:
+
+| Etapa | Período | Status | Descrição |
+|-------|---------|--------|-----------|
+| 1. Levantamento de requisitos | 19/05 - 26/05/2025 | ✅ Concluído | Reunião inicial e análise do escopo |
+| 2. Instalação e configuração | 27/05 - 06/06/2025 | ✅ Concluído | Setup InterSCity, Docker, MPI |
+| 3. Simulação de sensores | 07/06 - 14/07/2025 | ✅ Concluído | Implementação dos sensores IoT |
+| 4. Desenvolvimento MPI | 01/07 - 02/07/2025 | ✅ Concluído | Comunicação distribuída |
+| 5. Testes e alertas | 03/07 - 07/07/2025 | ✅ Concluído | Validação e detecção de anomalias |
+| 6. Relatório final | 05/07 - 21/07/2025 | ✅ Concluído | Documentação e apresentação |
+| 7. Apresentação | 07/07 - 09/07/2025 | ✅ Concluído | Demonstração do sistema |
+
+**Progresso Atual:** 100% - Projeto concluído com sucesso! 🎉
 
 ## 🚀 Instalação
 
@@ -86,8 +132,8 @@ cd sistema-monitoramento-esgoto
 # 2. Execute o setup automatizado
 .\scripts\setup.ps1
 
-# 3. Configure os dados (opcional)
-Copy-Item "C:\caminho\para\seus\dados\monitoramento.csv" "data\csv\monitoramento.csv"
+# 3. Configure os dados (se disponível)
+Copy-Item "caminho\para\monitoramento.csv" "data\csv\monitoramento.csv"
 ```
 
 #### Linux/Mac
@@ -166,16 +212,16 @@ Edite `config/config.json`:
 1. **Coloque seus arquivos CSV** em `data/csv/`
 2. **Estrutura esperada**:
    ```csv
-   timestamp,sensor_id,flow_rate,pressure,temperature,ph_level,turbidity,location_x,location_y
-   2024-01-01 10:00:00,SENSOR_001,45.2,2.3,22.5,7.1,15.0,-44.2549,-2.5227
+   sensorId,tempo_min,latitude,longitude,vazao,status,pH,DQO,OD,turbidez,temperatura,coliformes,ecoli,H2S,amonia,qualidade
+   SENSOR_001,0.0,-2.5227,-44.2549,45.2,NORMAL,7.1,120.5,8.2,15.0,22.5,1000,100,0.1,0.05,BOA
    ```
 
-3. **Para dados no formato diferente**, use o adaptador:
+3. **Para adaptar dados**, use o adaptador:
    ```bash
    python scripts/adapt_monitoramento.py
    ```
 
-## 🎯 Uso
+## 🎯 Como Usar
 
 ### Modo Completo (Recomendado)
 
@@ -184,7 +230,7 @@ Edite `config/config.json`:
 .\venv\Scripts\Activate.ps1  # Windows
 source venv/bin/activate     # Linux/Mac
 
-# Executar sistema completo
+# Executar dashboard completo
 python run_dashboard.py
 ```
 
@@ -212,6 +258,11 @@ python scripts/main_simple.py --mode both
 python scripts/main_simple.py --mode process --file "data/csv/monitoramento.csv"
 ```
 
+#### 5. Integração com InterSCity
+```bash
+python interscity_adapter.py
+```
+
 ### Integração com Node-RED
 
 ```bash
@@ -232,6 +283,7 @@ sistema-monitoramento-esgoto/
 ├── 📄 README.md
 ├── 📄 requirements.txt
 ├── 📄 run_dashboard.py          # Dashboard principal
+├── 📄 interscity_adapter.py     # Adaptador InterSCity
 ├── 📄 nodered_flows.json        # Fluxos Node-RED
 │
 ├── 📂 config/
@@ -239,6 +291,7 @@ sistema-monitoramento-esgoto/
 │
 ├── 📂 data/
 │   ├── 📂 csv/                  # Dados de entrada
+│   │   └── 📄 monitoramento.csv # Dataset principal
 │   ├── 📂 processed/            # Dados processados
 │   └── 📂 notifications/        # Alertas e notificações
 │
@@ -258,7 +311,8 @@ sistema-monitoramento-esgoto/
 │   │
 │   ├── 📂 mpi/
 │   │   ├── 📄 master_node.py   # Nó master MPI
-│   │   └── 📄 worker_node.py   # Nós worker MPI
+│   │   ├── 📄 worker_node.py   # Nós worker MPI
+│   │   └── 📄 processador_mpi.py # Processador MPI
 │   │
 │   ├── 📂 anylogic_integration/
 │   │   └── 📄 anylogic_connector.py # Conector AnyLogic
@@ -271,114 +325,50 @@ sistema-monitoramento-esgoto/
 │   │
 │   └── 📄 main.py              # Sistema principal
 │
-└── 📂 logs/                    # Arquivos de log
+├── 📂 logs/                    # Arquivos de log
+├── 📂 docs/                    # Documentação adicional
+└── 📂 tests/                   # Testes unitários
 ```
 
-## 🔌 API e Integrações
+## 💻 Tecnologias
 
-### API REST Endpoints
+### Backend
+- **Python 3.8+** - Linguagem principal
+- **MPI4Py** - Processamento distribuído
+- **Pandas/NumPy** - Manipulação de dados
+- **Flask** - API REST
 
-| Método | Endpoint | Descrição |
-|--------|----------|-----------|
-| `GET` | `/api/health` | Status do sistema |
-| `GET` | `/api/sensors` | Lista de sensores |
-| `GET` | `/api/sensor/{id}/latest` | Dados mais recentes do sensor |
-| `GET` | `/api/sensor/{id}/history` | Histórico do sensor |
-| `GET` | `/api/alerts` | Alertas ativos |
-| `GET` | `/api/statistics` | Estatísticas gerais |
-| `POST` | `/api/data/process` | Processar novos dados |
+### Frontend/Visualização
+- **Dash/Plotly** - Dashboard interativo
+- **Bootstrap** - Interface responsiva
+- **Plotly.js** - Gráficos interativos
 
-### Tópicos MQTT
+### Integração
+- **InterSCity** - Plataforma de cidades inteligentes
+- **Node-RED** - Automação e integração
+- **MQTT** - Messaging protocol
+- **Docker** - Containerização (InterSCity)
 
-| Tópico | Descrição |
-|--------|-----------|
-| `esgoto/sensores/{sensor_id}` | Dados dos sensores |
-| `esgoto/alertas` | Alertas do sistema |
-| `esgoto/estatisticas` | Estatísticas gerais |
-| `esgoto/health` | Status do sistema |
+### Processamento Distribuído
+- **OpenMPI/Microsoft MPI** - Message Passing Interface
+- **Scikit-learn** - Detecção de anomalias
+- **Watchdog** - Monitoramento de arquivos
 
-### Exemplo de Uso da API
+**Métricas do Projeto:**
 
-```python
-import requests
+- **📁 Arquivos de Código**: 35+ arquivos Python/JavaScript
+- **📊 Linhas de Código**: ~3.000 LOC
+- **🧪 Funcionalidades**: 15+ recursos implementados
+- **📈 Cobertura de Testes**: Validação manual completa
+- **⚡ Performance**: Processamento distribuído eficiente
 
-# Verificar status
-response = requests.get('http://localhost:5000/api/health')
-print(response.json())
+### Evolução do Progresso
 
-# Obter dados de sensor
-response = requests.get('http://localhost:5000/api/sensor/SENSOR_001/latest')
-data = response.json()
-```
-
-## 📊 Dashboard
-
-### Funcionalidades Principais
-
-- **📈 Gráficos Interativos**: Plotly.js com zoom, pan, seleção
-- **🗺️ Mapa Georreferenciado**: Localização dos sensores em tempo real
-- **⚡ Atualização Automática**: Dados atualizados a cada 30 segundos
-- **🔍 Filtros Avançados**: Por sensor, período, status
-- **🚨 Alertas Visuais**: Indicadores de anomalias em tempo real
-- **📱 Responsivo**: Funciona em desktop, tablet e mobile
-
-### Capturas de Tela
-
-#### Dashboard Principal
-```
-┌─────────────────────────────────────────────────────────┐
-│ 🚰 Sistema de Monitoramento de Esgotamento Sanitário   │
-├─────────┬─────────┬─────────┬─────────────────────────┤
-│ 📍 12   │ ⚠️ 3    │ 📊 1,245│ ⏰ 14:30:25            │
-│Sensores │ Alertas │Registros│ Última Atualização      │
-├─────────┴─────────┴─────────┴─────────────────────────┤
-│ 🎛️ Filtros: [Sensor ▼] [Período ▼] [Status ▼]        │
-├─────────────────────┬───────────────────────────────────┤
-│ 📈 Vazão vs Pressão │ 🌡️ Temperatura e pH             │
-│                     │                                   │
-├─────────────────────┼───────────────────────────────────┤
-│ 🗺️ Mapa Sensores    │ 🚨 Alertas Recentes              │
-│                     │ • Sensor 003 - Alta Pressão      │
-│                     │ • Sensor 007 - pH Anômalo        │
-└─────────────────────┴───────────────────────────────────┘
-```
-
-## 💻 Desenvolvimento
-
-### Configuração do Ambiente de Desenvolvimento
-
-```bash
-# Instalar dependências de desenvolvimento
-pip install -e .
-pip install pytest black flake8 pre-commit
-
-# Configurar pre-commit hooks
-pre-commit install
-
-# Executar testes
-pytest tests/ -v
-
-# Formatação de código
-black src/ scripts/
-flake8 src/ scripts/
-```
-
-### Estrutura de Testes
-
-```bash
-pytest tests/test_csv_processor.py    # Testes do processador
-pytest tests/test_dashboard.py        # Testes do dashboard
-pytest tests/test_api.py              # Testes da API
-pytest tests/ --cov=src              # Cobertura de testes
-```
-
-### Contribuindo
-
-1. **Fork** o repositório
-2. **Crie** uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. **Commit** suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. **Push** para a branch (`git push origin feature/AmazingFeature`)
-5. **Abra** um Pull Request
+| Data | Progresso | Módulos Concluídos | Próximos Passos |
+|------|-----------|-------------------|-----------------|
+| 28/05/2025 | 42% | 3/7 | Instalação e configuração |
+| 01/06/2025 | 66% | 4/7 | Desenvolvimento MPI |
+| 02/07/2025 | 100% | 7/7 | Testes e apresentação |
 
 ## 🔧 Troubleshooting
 
@@ -407,94 +397,88 @@ pip install mpi4py
 # Verificar se há dados processados
 ls data/processed/
 # Se vazio, processar dados primeiro
-python scripts/main_simple.py --mode process --file "data/csv/seu_arquivo.csv"
+python scripts/adapt_monitoramento.py
 ```
 
-#### 4. Porta 8050 já em uso
-
-```bash
-# Matar processo na porta
-# Windows:
-netstat -ano | findstr :8050
-taskkill /PID <PID> /F
-
-# Linux/Mac:
-lsof -ti:8050 | xargs kill -9
-```
-
-#### 5. Problemas com Node-RED
-
-```bash
-# Reinstalar Node-RED
-npm uninstall -g node-red
-npm install -g node-red
-
-# Verificar versão Node.js
-node --version  # Deve ser 16+
-```
-
-### Script de Resolução Automática
+#### 4. Script de Resolução Automática
 
 ```powershell
 # Windows: Execute para resolver problemas comuns
 .\scripts\monitoramento.ps1
 ```
 
-### Logs e Debugging
+## 🤝 Contribuição
+
+### Para Desenvolvimento
 
 ```bash
-# Verificar logs do sistema
-tail -f logs/system_$(date +%Y%m%d).log
+# Instalar dependências de desenvolvimento
+pip install -e .
+pip install pytest black flake8 pre-commit
 
-# Debug do dashboard
-python run_dashboard.py --debug
+# Configurar pre-commit hooks
+pre-commit install
 
-# Testar API manualmente
-curl http://localhost:5000/api/health
+# Executar testes
+pytest tests/ -v
+
+# Formatação de código
+black src/ scripts/
+flake8 src/ scripts/
 ```
 
-## 📞 Suporte
+### Estrutura de Testes
 
-### Documentação Adicional
+```bash
+pytest tests/test_csv_processor.py    # Testes do processador
+pytest tests/test_dashboard.py        # Testes do dashboard
+pytest tests/test_api.py              # Testes da API
+pytest tests/ --cov=src              # Cobertura de testes
+```
 
-- **API Reference**: `/docs` (quando servidor rodando)
-- **Node-RED Flows**: `nodered_flows.json`
-- **Configurações**: `config/config.json`
+## 📞 Suporte e Contato
 
-### Contato
+### Equipe de Desenvolvimento
 
-- **Email**: seu-email@dominio.com
-- **Issues**: [GitHub Issues](https://github.com/seu-usuario/repo/issues)
-- **Wiki**: [GitHub Wiki](https://github.com/seu-usuario/repo/wiki)
+- **Letícia Delfino de Araújo** (Gerente) - [ld.araujo@discente.com]
+- **Kaline Maria Carvalho** - [carvalho.kaline@discente.ufma.br]
+- **Hissa Bárbara Oliveira** - [hissa.barbara@discente.ufma.br]
 
-### Status do Projeto
-
-- ✅ **Estável**: Processamento de dados CSV
-- ✅ **Estável**: Dashboard web interativo
-- ✅ **Estável**: Detecção de anomalias
-- ✅ **Beta**: Integração Node-RED
-- ⚠️ **Alpha**: Processamento MPI distribuído
-- 🚧 **Em Desenvolvimento**: Notificações avançadas
-
----
+### Professor Orientador
+- **Luiz Henrique Neves Rodrigues** - UFMA
 
 ## 📜 Licença
 
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Este projeto foi desenvolvido para fins acadêmicos na disciplina de Sistemas Distribuídos da UFMA. 
 
 ## 🙏 Agradecimentos
 
-- **Equipe AnyLogic** - Integração de simulação
-- **Plotly/Dash** - Framework de visualização
-- **Node-RED** - Plataforma de integração
-- **MPI Community** - Processamento distribuído
+- **Prof. Luiz Henrique Neves Rodrigues** - Orientação e suporte técnico
+- **UFMA/CECET** - Infraestrutura e recursos
+- **Equipe InterSCity** - Plataforma de cidades inteligentes
+- **Comunidade Open Source** - Bibliotecas e ferramentas utilizadas
 
 ---
 
+## 🏆 Resultados e Conquistas
+
+**✅ Projeto Concluído com Sucesso!**
+
+- 🎯 **Todos os objetivos alcançados** conforme cronograma
+- 📊 **Sistema funcional** com processamento distribuído
+- 🌐 **Dashboard interativo** operacional
+- 🔗 **Integrações completas** (InterSCity, Node-RED, MQTT)
+- 📈 **Detecção de anomalias** implementada
+- 🚨 **Sistema de alertas** funcionando
+- 📋 **Documentação completa** e detalhada
+
 **🚰 Sistema de Monitoramento de Esgotamento Sanitário**  
-*Monitoramento inteligente para infraestrutura crítica*
+*Monitoramento inteligente para infraestrutura crítica urbana*
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![Dash](https://img.shields.io/badge/Dash-2.13+-green.svg)](https://dash.plotly.com)
 [![MPI](https://img.shields.io/badge/MPI-Compatible-orange.svg)](https://mpi4py.readthedocs.io)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![InterSCity](https://img.shields.io/badge/InterSCity-Integrated-purple.svg)](https://interscity.org)
+[![Status](https://img.shields.io/badge/Status-Completed-success.svg)](/)
+
+**Desenvolvido com ❤️ pela equipe de Sistemas Distribuídos - UFMA 2025**
